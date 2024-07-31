@@ -10,8 +10,8 @@ window.addEventListener('scroll', () => {
     console.log(`scrollTop + clientHeight = ${scrollTop + clientHeight} | Altura personalizada = ${scrollHeight - 3}`);
 
     // Verifica si el desplazamiento alcanza una posición específica y luego llama a la función newContainer
-    if (scrollTop + clientHeight > scrollHeight - 10) {
-        setTimeout(newContainer, 500);
+    if (scrollTop + clientHeight > scrollHeight - 3) {
+        setTimeout(newContainer, 400);
     }
 });
 
