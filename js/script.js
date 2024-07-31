@@ -4,7 +4,7 @@ window.addEventListener('scroll', () => {
     const {scrollHeight, clientHeight, scrollTop} =  document.documentElement
 
     console.log(`scrollTop + clientHeight = ${scrollTop + clientHeight} | Altura personalizada = ${scrollHeight - 3}`)
-    scrollTop + clientHeight > scrollHeight - 3 && setTimeout(newContainer, 500)
+    scrollTop + clientHeight > scrollHeight - 5 && setTimeout(newContainer, 500)
 })
 
 const newContainer = () => {
