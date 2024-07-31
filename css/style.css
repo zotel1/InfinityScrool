@@ -1,18 +1,21 @@
+/* Estilos globales */
 * {
 	font-family: roboto;
 	background-color: #17223b;
 	color: aliceblue;
 }
 
+/* Contenedor principal */
 .container {
-	width: 100%;
+	width:100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+/* Cajas con estilos */
 .box {
-	width: 700px;
+	width: 90%; /* Cambia el ancho al 100% para ocupar todo el ancho del contenedor */
 	height: 200px;
 	padding: 18px;
 	margin: 30px 0;
@@ -31,6 +34,7 @@
 	background-color: #512da8;
 }
 
+/* Spinner animado */
 .spinner {
 	margin: 30px auto;
 	width: 70px;
@@ -38,15 +42,18 @@
 	border-radius: 50%;
 	border: 2px solid #ccc;
 	animation: spin 1.0s linear infinite;
-	border-bottom-color: #614ad3 ;
+	border-bottom-color: #614ad3;
 }
 
-@keyframes spin {
-	from {transform: rotate(0);}
-	to {transform: rotate(360deg);}
-}
-
+/* Degradado */
 .box.d {
 	background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
-	background: linear-gradient(to right, #00dbde, #fc00ff );
+	background: linear-gradient(to right, #00dbde, #fc00ff);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+	.box {
+		height: 150px; /* Ajusta la altura para pantallas más pequeñas */
+	}
 }
