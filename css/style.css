@@ -45,3 +45,8 @@
 	from {transform: rotate(0);}
 	to {transform: rotate(360deg);}
 }
+
+.box.d {
+	background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
+	background: linear-gradient(to right, #00dbde, #fc00ff );
+}
