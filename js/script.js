@@ -1,10 +1,10 @@
 const container = document.querySelector('.container')
 
 window.addEventListener('scroll', () => {
-    const {scroolHeight, clientHeight, scrollTop} =  document.documentElement
+    const {scrollHeight, clientHeight, scrollTop} =  document.documentElement
 
-    console.log(clientHeight)
-    scrollTop + clientHeight > scroolHeight - 3 && setTimeout(newContainer, 1000)
+    console.log(`scrollTop + clientHeight = ${scrollTop + clientHeight} | Altura personalizada = ${scrollHeight - 3}`)
+    scrollTop + clientHeight > scrollHeight - 3 && setTimeout(newContainer, 500)
 })
 
 const newContainer = () => {
