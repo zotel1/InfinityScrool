@@ -18,6 +18,6 @@ window.addEventListener('scroll', () => {
 // Función para crear un nuevo contenedor
 const newContainer = () => {
     const box = document.createElement('div');
-    box.className = 'box d'; // Asigna la clase 'box d' al nuevo contenedor
+    box.className = 'box e'; // Asigna la clase 'box d' al nuevo contenedor
     container.appendChild(box); // Agrega el contenedor al elemento 'container'
 };

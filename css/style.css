@@ -34,6 +34,10 @@
 	background-color: #512da8;
 }
 
+.box.d {
+	background-color: #432588;
+}
+
 /* Spinner animado */
 .spinner {
 	margin: 30px auto;
@@ -46,7 +50,7 @@
 }
 
 /* Degradado */
-.box.d {
+.box.e {
 	background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
 	background: linear-gradient(to right, #00dbde, #fc00ff);
 }
